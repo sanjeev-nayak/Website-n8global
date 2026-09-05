@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toy Dynamics | Manufacturing & Import</title>
+    <!-- Tailwind CSS for styling and responsiveness -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Lucide Icons for clean visual elements -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        :root {
+            --mint: #E8F5E9;
+            --sky-blue: #E3F2FD;
+            --gentle-yellow: #FFFDE7;
+            --dark-slate: #1E293B;
+        }
+        body {
+            color: var(--dark-slate);
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 antialiased">
+
+    <!-- TOP HEADER: Quick Contact Info & Corporate Email -->
+    <div class="bg-slate-900 text-slate-300 text-xs py-2 px-4 border-b border-slate-800">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center space-x-6">
+                <a href="mailto:info@toydynamics.com" class="flex items-center gap-1.5 hover:text-white transition-colors">
+                    <i data-lucide="mail" class="w-3.5 h-3.5 text-blue-400"></i> info@toydynamics.com
+                </a>
+                <a href="tel:+18005550199" class="flex items-center gap-1.5 hover:text-white transition-colors">
+                    <i data-lucide="phone" class="w-3.5 h-3.5 text-emerald-400"></i> +1 (800) 555-0199
+                </a>
+            </div>
+            <div class="hidden sm:block text-slate-400 font-medium">
+                B2B Sourcing & Logistics Hub
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN NAVIGATION BAR WITH LOGIN -->
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100 shadow-xs">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <!-- Logo Layout -->
+                <div class="flex items-center space-x-2">
+                    <div class="w-10 h-10 bg-[#A5D6A7] rounded-xl flex items-center justify-center text-slate-800 font-bold shadow-xs">
+                        <i data-lucide="toy-brick" class="w-6 h-6 text-slate-700"></i>
+                    </div>
+                    <span class="text-xl font-bold tracking-tight text-slate-800">Toy<span class="text-blue-500 font-medium">Dynamics</span></span>
+                </div>
+
+                <!-- Navigation Menu & Actions -->
+                <div class="hidden md:flex items-center space-x-8 text-sm font-semibold text-slate-600">
+                    <a href="#" class="hover:text-slate-900 transition-colors">Home</a>
+                    <a href="#catalog" class="hover:text-slate-900 transition-colors">Divisions</a>
+                    <a href="#capabilities" class="hover:text-slate-900 transition-colors">Capabilities</a>
+                    
+                    <!-- B2B Portal Login Trigger -->
+                    <button onclick="toggleModal(true)" class="flex items-center gap-2 text-slate-700 hover:text-slate-900 transition-colors border border-slate-200 px-4 py-2 rounded-xl bg-slate-50 cursor-pointer">
+                        <i data-lucide="user" class="w-4 h-4 text-slate-500"></i> Client Login
+                    </button>
+                    <a href="#quote" class="bg-slate-800 text-white px-5 py-2.5 rounded-xl hover:bg-slate-700 transition-all shadow-xs">Get a Quote</a>
+                </div>
+
+                <!-- Responsive Menu Toggle -->
+                <div class="md:hidden">
+                    <button id="menu-btn" class="text-slate-600 hover:text-slate-900 focus:outline-none">
+                        <i data-lucide="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-100 px-4 pt-2 pb-6 space-y-3 font-medium text-slate-600 shadow-md">
+            <a href="#" class="block py-2">Home</a>
+            <a href="#catalog" class="block py-2">Divisions</a>
+            <a href="#capabilities" class="block py-2">Capabilities</a>
+            <button onclick="toggleModal(true)" class="w-full text-left py-2 flex items-center gap-2"><i data-lucide="user" class="w-4 h-4"></i> Client Login</button>
+            <a href="#quote" class="block text-center bg-slate-800 text-white py-3 rounded-xl">Get a Quote</a>
+        </div>
+    </nav>
+
+    <!-- PROMINENT EDITABLE BANNER SECTION -->
+    <header class="relative overflow-hidden bg-gradient-to-tr from-[#E3F2FD] via-[#FFFDE7] to-[#E8F5E9] py-20 lg:py-32 border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="max-w-3xl">
+                <!-- Editable Headline Badge -->
+                <span class="inline-flex items-center gap-1.5 py-1 px-3 rounded-full text-xs font-semibold bg-white text-slate-800 shadow-xs border border-slate-200/60 mb-6">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400 block animate-pulse"></span> Corporate Sourcing Portal
+                </span>
+                
+                <!-- Main Banner Headline -->
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-900 leading-tight">
+                    From Imagination to Import: <span class="bg-gradient-to-r from-blue-600 to-emerald-600 bg-clip-text text-transparent">Next-Gen Electronic & Plush Toys</span>
+                </h1>
+                
+                <!-- Supporting Sub-text description -->
+                <p class="mt-6 text-lg text-slate-600 leading-relaxed max-w-2xl">
+                    Streamlining corporate sourcing with top-tier custom manufacturing, rigorous international safety compliance, and comprehensive end-to-end import logistics for global retail networks.
+                </p>
+                
+                <div class="mt-10 flex flex-col sm:flex-row gap-4">
+                    <button onclick="toggleModal(true)" class="inline-flex items-center justify-center px-6 py-3.5 border border-transparent text-base font-semibold rounded-xl text-white bg-slate-800 hover:bg-slate-700 shadow-md transition-all cursor-pointer">
+                        Access Vendor Login
+                    </button>
+                    <a href="#quote" class="inline-flex items-center justify-center px-6 py-3.5 border border-slate-300/80 text-base font-semibold rounded-xl text-slate-700 bg-white/80 hover:bg-white transition-all backdrop-blur-xs">
+                        Wholesale Inquiries
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Abstract Pasted Background Decor -->
+        <div class="absolute -top-10 -right-20 w-96 h-96 bg-blue-200/30 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 left-1/3 w-72 h-72 bg-emerald-200/20 rounded-full blur-3xl"></div>
+    </header>
+
+    <!-- TOY CATEGORY SHOWCASE -->
+    <section id="catalog" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-14">
+                <h2 class="text-3xl font-bold tracking-tight text-slate-900">Manufacturing Focus Areas</h2>
+                <p class="mt-3 text-slate-600">Dual-stream processing built for modern electronic entertainment hardware and safe soft toys.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Division 1 -->
+                <div class="bg-gradient-to-br from-[#E8F5E9]/60 to-[#E8F5E9]/20 rounded-2xl p-8 border border-emerald-100 flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 bg-white rounded-xl flex items-center justify-center text-emerald-600 border border-emerald-100 mb-6 shadow-xs">
+                            <i data-lucide="sparkles" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-slate-800">Plush & Soft Toys</h3>
+                        <p class="mt-3 text-slate-600 text-sm leading-relaxed">
+                            Premium, hypoallergenic filling and GOTS certified organic materials. Crafted precisely according to custom structural design models and custom character embroidery specs.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-6 border-t border-emerald-100/60 text-xs font-semibold uppercase tracking-wider text-emerald-800">
+                        Eco-Friendly Materials Only
+                    </div>
+                </div>
+
+                <!-- Division 2 -->
+                <div class="bg-gradient-to-br from-[#E3F2FD]/60 to-[#E3F2FD]/20 rounded-2xl p-8 border border-blue-100 flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 bg-white rounded-xl flex items-center justify-center text-blue-600 border border-blue-100 mb-6 shadow-xs">
+                            <i data-lucide="cpu" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-slate-800">Electronic & Interactive</h3>
+                        <p class="mt-3 text-slate-600 text-sm leading-relaxed">
+                            Smart technical designs, interactive toy configurations, sound modules, and STEM educational builds matching international decibel and radiation criteria.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-6 border-t border-blue-100/60 text-xs font-semibold uppercase tracking-wider text-blue-800">
+                        Advanced Safety Testing Checked
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GLOBAL COMPLIANCE CAPABILITIES -->
+    <section id="capabilities" class="py-20 bg-slate-50 border-t border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-6 bg-white rounded-2xl border border-slate-200/60 shadow-xs">
+                    <h4 class="font-bold text-slate-800 text-base mb-2">Custom Manufacturing</h4>
+                    <p class="text-slate-600 text-xs leading-relaxed">Scalable output modules handling small product mock-ups to million-unit mass merchant distribution chains.</p>
+                </div>
+                <div class="p-6 bg-white rounded-2xl border border-slate-200/60 shadow-xs">
+                    <h4 class="font-bold text-slate-800 text-base mb-2">Global Import & Freight</h4>
+                    <p class="text-slate-600 text-xs leading-relaxed">End-to-end management covering port terminal clearance, multi-modal container transport, and warehousing routing.</p>
+                </div>
+                <div class="p-6 bg-white rounded-2xl border border-slate-200/60 shadow-xs">
+                    <h4 class="font-bold text-slate-800 text-base mb-2">ASTM, CE, & EN71 Standards</h4>
+                    <p class="text-slate-600 text-xs leading-relaxed">Every production run undergoes certification inside certified laboratories to ensure immediate import validity.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INQUIRY FORM MODULE -->
+    <section id="quote" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6">
+            <div class="bg-slate-50 rounded-3xl border border-slate-200 p-8 sm:p-12">
+                <div class="text-center max-w-xl mx-auto mb-10">
+                    <h2 class="text-3xl font-bold text-slate-900">Request Sourcing Estimate</h2>
+                    <p class="mt-2 text-sm text-slate-600">Submit your material counts and blueprint files. We reply within 24 business hours.</p>
+                </div>
+
+                <form onsubmit="alert('Sourcing quote request dispatched successfully!'); event.preventDefault();" class="space-y-6">
+                    <div class="grid sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-2">Company Name</label>
+                            <input type="text" required class="w-full bg-white border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-2">Corporate Email</label>
+                            <input type="email" required class="w-full bg-white border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-2">Requirement Specifications</label>
+                        <textarea rows="4" class="w-full bg-white border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-slate-800 text-white font-semibold py-4 rounded-xl hover:bg-slate-700 transition-colors shadow-xs cursor-pointer">Submit Quote Details</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- MODAL POPUP: DYNAMIC B2B CLIENT LOGIN PORTAL -->
+    <div id="login-modal" class="fixed inset-0 z-50 overflow-y-auto hidden bg-slate-900/60 backdrop-blur-xs flex items-center justify-center p-4">
+        <div class="bg-white rounded-3xl border border-slate-200 w-full max-w-md p-8 shadow-xl relative animate-in fade-in zoom-in-95 duration-200">
+            <!-- Close icon button -->
+            <button onclick="toggleModal(false)" class="absolute top-4 right-4 text-slate-400 hover:text-slate-600 cursor-pointer">
+                <i data-lucide="x" class="w-5 h-5"></i>
+            </button>
+            
+            <div class="text-center mb-6">
+                <div class="w-12 h-12 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center mx-auto mb-3 border border-blue-100">
+                    <i data-lucide="lock" class="w-6 h-6"></i>
+                </div>
+                <h3 class="text-xl font-bold text-slate-900">B2B Vendor Portal</h3>
+                <p class="text-xs text-slate-500 mt-1">Access your tracking sheets, bills of lading, and shipping manifests.</p>
+            </div>
+
+            <form onsubmit="alert('Login authorization processing via system framework.'); event.preventDefault();" class="space-y-4">
+                <div>
+                    <label class="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-1.5">Client Email Address</label>
+                    <input type="email" required placeholder="partner@retailer.com" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:bg-white focus:border-slate-400 transition-all">
+                </div>
+                <div>
+                    <label class="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-1.5">Secure Password</label>
+                    <input type="password" required placeholder="••••••••" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:bg-white focus:border-slate-400 transition-all">
+                </div>
+                <div class="flex items-center justify-between text-xs font-semibold pt-1">
+                    <label class="flex items-center gap-1.5 text-slate-600 cursor-pointer">
+                        <input type="checkbox" class="rounded border-slate-300 text-slate-800 focus:ring-0"> Remember Me
+                    </label>
+                    <a href="#" class="text-blue-600 hover:underline">Forgot Access Key?</a>
+                </div>
+                <button type="submit" class="w-full bg-slate-800 text-white font-semibold py-3.5 rounded-xl hover:bg-slate-700 transition-colors shadow-xs cursor-pointer mt-2">
+                    Authorize & Enter Portal
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- CORPORATE FOOTER PANEL -->
+    <footer class="bg-white text-slate-500 text-xs py-12 border-t border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
+            <div class="flex justify-center items-center space-x-2">
+                <div class="w-6 h-6 bg-[#A5D6A7] rounded-md flex items-center justify-center text-slate-800 font-bold">
+                    <i data-lucide="toy-brick" class="w-4 h-4 text-slate-700"></i>
+                </div>
+                <span class="text-sm font-bold tracking-tight text-slate-800">ToyDynamics</span>
+            </div>
+            <p class="max-w-md mx-auto text-slate-400">
+                Authorized Supplier of Custom Manufactured Entertainment Goods. Monitored through global quality assurance branches.
+            </p>
+            <div class="text-slate-400 font-medium">
+                &copy; 2026 ToyDynamics Group. Global Distribution Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- INTERACTIVE SCRIPT ARCHITECTURE -->
+    <script>
+        // Init vector visuals
+        lucide.createIcons();
+
+        // Responsive Hamburger Nav Logic
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // B2B Login Modal Visibility Control
+        function toggleModal(show) {
+            const modal = document.getElementById('login-modal');
+            if (show) {
+                modal.classList.remove('hidden');
+                document.body.style.overflow = 'hidden'; // Lock scrolling behind modal
+            } else {
+                modal.classList.add('hidden');
+                document.body.style.overflow = ''; // Unlock scrolling
+            }
+        }
+    </script>
+</body>
+</html>
