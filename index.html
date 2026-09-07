@@ -1,266 +1,207 @@
-<!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<!doctype html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Toy Dynamics | Manufacturing & Import</title>
-    <!-- Tailwind CSS for styling and responsiveness -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <!-- Lucide Icons for clean visual elements -->
-    <script src="https://unpkg.com/lucide@latest"></script>
-    <style>
-        :root {
-            --mint: #E8F5E9;
-            --sky-blue: #E3F2FD;
-            --gentle-yellow: #FFFDE7;
-            --dark-slate: #1E293B;
-        }
-        body {
-            color: var(--dark-slate);
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f9f8f5">
+  <meta name="description" content="N8 Global Enterprises is a leading India-based wholesaler and supplier of plush soft toys, electronic toys and STEM educational toys.">
+  <title>N8 Global Enterprises | Soft Toys & STEM Educational Toys Wholesaler in India</title>
+  <link rel="icon" href="./assets/logo.png">
+  <link rel="stylesheet" href="./style.css">
 </head>
-<body class="bg-slate-50 antialiased">
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="#home" aria-label="N8 Global Enterprises home">
+      <img src="./assets/logo.png" alt="N8 Global Enterprises">
+    </a>
+    <nav class="desktop-nav" aria-label="Primary"><a href="#home">Home</a>
+<a href="#about">About Us</a>
+<a href="#capabilities">Why Choose Us</a>
+<a href="#catalog">Product Range</a>
+<a href="#contact">Contact Us</a></nav>
+    <div class="header-actions">
+      <a class="btn btn-accent quote-btn" href="#quote">Get a Quote</a>
+      <button class="icon-btn mobile-toggle" id="menuToggle" aria-expanded="false" aria-controls="mobileNav" aria-label="Open menu"><span class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></span></button>
+    </div>
+  </div>
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile">
+    <div class="container mobile-nav-inner">
+      <a href="#home">Home</a>
+<a href="#about">About Us</a>
+<a href="#capabilities">Why Choose Us</a>
+<a href="#catalog">Product Range</a>
+<a href="#contact">Contact Us</a>
+      <a class="btn btn-accent" href="#quote">Get a Quote</a>
+    </div>
+  </nav>
+</header>
 
-    <!-- TOP HEADER: Quick Contact Info & Corporate Email -->
-    <div class="bg-slate-900 text-slate-300 text-xs py-2 px-4 border-b border-slate-800">
-        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
-            <div class="flex items-center space-x-6">
-                <a href="mailto:info@toydynamics.com" class="flex items-center gap-1.5 hover:text-white transition-colors">
-                    <i data-lucide="mail" class="w-3.5 h-3.5 text-blue-400"></i> info@toydynamics.com
-                </a>
-                <a href="tel:+18005550199" class="flex items-center gap-1.5 hover:text-white transition-colors">
-                    <i data-lucide="phone" class="w-3.5 h-3.5 text-emerald-400"></i> +1 (800) 555-0199
-                </a>
-            </div>
-            <div class="hidden sm:block text-slate-400 font-medium">
-                B2B Sourcing & Logistics Hub
-            </div>
+<main>
+<section id="home" class="hero section-blue">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <span class="eyebrow-pill"><span class="dot"></span>Sadar Bazar, Delhi · Pan-India Wholesale Supply</span>
+      <h1>India's Trusted Wholesaler of <span>Soft Toys</span> &amp; STEM Educational Toys</h1>
+      <p class="lead">N8 Global Enterprises supplies premium plush soft toys, electronic toys and STEM learning kits to retailers, distributors, gift shops and schools across India. BIS-certified products, factory-direct wholesale prices and fast dispatch from Delhi to every state.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#catalog">Explore Catalog <span class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+        <a class="btn btn-outline" href="#quote">Get Wholesale Price List</a>
+      </div>
+      <ul class="trust-row">
+        <li><span class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 20 6v5c0 5-3.4 8.6-8 10-4.6-1.4-8-5-8-10V6l8-3Z"/><path d="m8.5 12 2.2 2.2 4.8-5"/></svg></span> BIS / ISI marked &amp; GST-billed</li>
+        <li><span class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h11v11H3zM14 10h4l3 3v4h-7z"/><circle cx="7" cy="18" r="2"/><circle cx="18" cy="18" r="2"/></svg></span> Delivery to all 28 states &amp; UTs</li>
+      </ul>
+    </div>
+    <div class="hero-media" id="heroMedia">
+      <div class="carousel" role="region" aria-roledescription="carousel" aria-label="Product highlights">
+        
+      <div class="slide active" aria-hidden="false">
+        <img src="./assets/hero-plush.png" alt="Collection of premium pastel plush toys in a studio setting">
+        <div class="slide-caption"><span>Plush & Soft Toys</span></div>
+      </div>
+      <div class="slide " aria-hidden="true">
+        <img src="./assets/hero-electronic.png" alt="Modern electronic and STEM learning toys arranged on a pale blue backdrop">
+        <div class="slide-caption"><span>Electronic & Interactive Toys</span></div>
+      </div>
+      <div class="slide " aria-hidden="true">
+        <img src="./assets/hero-factory.png" alt="Warehouse team preparing bulk toy orders for dispatch">
+        <div class="slide-caption"><span>Bulk Supply & Dispatch</span></div>
+      </div>
+      </div>
+      <div class="carousel-controls">
+        <div class="dots" role="tablist" aria-label="Choose slide">
+          <button class="dot-btn active" data-slide="0" aria-label="Go to slide 1"></button>
+          <button class="dot-btn" data-slide="1" aria-label="Go to slide 2"></button>
+          <button class="dot-btn" data-slide="2" aria-label="Go to slide 3"></button>
         </div>
+        <div class="arrow-buttons">
+          <button class="icon-btn" id="prevSlide" aria-label="Previous slide"><span class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg></span></button>
+          <button class="icon-btn" id="nextSlide" aria-label="Next slide"><span class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="section">
+  <div class="container about-grid">
+    <div>
+      <p class="section-kicker">About Us</p>
+      <h2>India's go-to wholesale partner for soft toys and learning toys.</h2>
+      <p class="muted">N8 Global Enterprises is a Delhi-based toy wholesaler and supplier serving the Indian retail trade. From our Sadar Bazar warehouse we stock thousands of plush soft toys, electronic toys and STEM educational kits — sourced from leading Indian manufacturers and select certified partners — and supply them at wholesale rates to shopkeepers, distributors, e-commerce sellers, schools and corporate gifting buyers in every corner of the country.</p>
+    </div>
+    <ul class="point-grid">
+      <li><span class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8.5 12 2.3 2.3 4.8-5"/></svg></span><span>Based in Sadar Bazar, Delhi — the largest toy wholesale market in India</span></li>
+      <li><span class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8.5 12 2.3 2.3 4.8-5"/></svg></span><span>Supplying retailers, distributors, gift shops, toy stores and schools in 500+ cities and towns</span></li>
+      <li><span class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8.5 12 2.3 2.3 4.8-5"/></svg></span><span>Every product BIS-certified under the Toys (Quality Control) Order and GST-invoiced</span></li>
+      <li><span class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8.5 12 2.3 2.3 4.8-5"/></svg></span><span>Wide range of soft toys, electronic toys and STEM kits in stock — dispatched within 24–48 hours</span></li>
+    </ul>
+  </div>
+</section>
+
+<section id="catalog" class="section catalog-section">
+  <div class="container">
+    <div class="center-heading">
+      <p class="section-kicker">Product Catalog</p>
+      <h2>Two categories. One wholesale price list.</h2>
+      <p class="muted">Whether you run a toy shop in Jaipur, a gift store in Kochi or an online store on Amazon and Flipkart, both ranges come with the same low MOQs, GST billing and pan-India delivery.</p>
+    </div>
+    <div class="division-grid">
+      <article class="division-card">
+        <div class="division-image plush"><img src="./assets/division-plush.png" alt="Handcrafted pastel plush teddy bear on a wooden surface"></div>
+        <div class="division-body">
+          <div class="division-title"><span class="square-icon navy"><span class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 8.7c0 5-8.8 10.2-8.8 10.2S3.2 13.7 3.2 8.7A4.7 4.7 0 0 1 12 6.2a4.7 4.7 0 0 1 8.8 2.5Z"/></svg></span></span><div><h3>Plush &amp; Soft Toys</h3><p>Teddy bears, animals &amp; character plush at wholesale rates</p></div></div>
+          <p class="muted">Teddy bears from 20 cm to 6 ft, animal soft toys, cushions, keychain plush and festive gifting ranges for Diwali, Raksha Bandhan and Valentine season. Soft, hypoallergenic fabrics and child-safe stitching — stocked in bulk and ready to ship to your store.</p>
+          <ul class="feature-list"><li><span class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4C10 4 5 8 5 15c0 2.8 1.5 5 4 5 7 0 11-6 11-16Z"/><path d="M4 20c3-5 7-8 12-10"/></svg></span>Skin-friendly, washable fabrics</li><li><span class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 20 6v5c0 5-3.4 8.6-8 10-4.6-1.4-8-5-8-10V6l8-3Z"/><path d="m8.5 12 2.2 2.2 4.8-5"/></svg></span>BIS-certified, child-safe stitching</li></ul>
+          <a class="text-link" href="#quote">Request plush price list <span class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+        </div>
+      </article>
+      <article class="division-card">
+        <div class="division-image electronic"><img src="./assets/division-electronic.png" alt="Interactive learning robot toy with soft LED eyes beside STEM coding cards"></div>
+        <div class="division-body">
+          <div class="division-title"><span class="square-icon navy"><span class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="7" width="10" height="10" rx="1"/><path d="M9 1v4m6-4v4M9 19v4m6-4v4M1 9h4m-4 6h4m14-6h4m-4 6h4M9 9h6v6H9z"/></svg></span></span><div><h3>Electronic &amp; STEM Educational Toys</h3><p>Learning toys for ages 3–14, sold in bulk</p></div></div>
+          <p class="muted">Coding robots, DIY science kits, talking learning tablets, musical toys, remote-control cars and activity boards that support NEP 2020 play-based learning. Ideal for toy shops, school suppliers, coaching centres and corporate gifting.</p>
+          <ul class="feature-list"><li><span class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="7" width="10" height="10" rx="1"/><path d="M9 1v4m6-4v4M9 19v4m6-4v4M1 9h4m-4 6h4m14-6h4m-4 6h4M9 9h6v6H9z"/></svg></span>STEM, robotics &amp; early-learning range</li><li><span class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 20 6v5c0 5-3.4 8.6-8 10-4.6-1.4-8-5-8-10V6l8-3Z"/><path d="m8.5 12 2.2 2.2 4.8-5"/></svg></span>BIS / ISI marked electrical safety</li></ul>
+          <a class="text-link" href="#quote">Request electronic price list <span class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="capabilities" class="section">
+  <div class="container">
+    <div class="section-heading">
+      <p class="section-kicker">Why Retailers Choose N8 Global</p>
+      <h2>Everything a toy business in India needs from one supplier.</h2>
+      <p class="muted">Three reasons shopkeepers, distributors, school suppliers and online sellers across the country restock with us month after month.</p>
+    </div>
+    <div class="cap-grid">
+      <article class="cap-card"><span class="big-icon"><span class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 5h12M6 9h10M8 5c5 0 7 2 7 5s-2 4-7 4l7 6"/></svg></span></span><h3>Factory-Direct Wholesale Pricing</h3><p class="muted">We buy in volume directly from Indian manufacturers and certified partners, so retailers and distributors get the lowest trade prices with transparent GST invoicing and no middlemen.</p><ul><li>Low MOQs from 1 carton</li><li>Slab-wise bulk discounts</li><li>GST invoice on every order</li></ul></article>
+      <article class="cap-card"><span class="big-icon"><span class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h11v11H3zM14 10h4l3 3v4h-7z"/><circle cx="7" cy="18" r="2"/><circle cx="18" cy="18" r="2"/></svg></span></span><h3>Pan-India Dispatch &amp; Distribution</h3><p class="muted">Orders leave our Sadar Bazar warehouse within 24–48 hours via trusted transporters and courier partners — from metros to Tier 2 and Tier 3 towns, with tracking on every consignment.</p><ul><li>Delhi NCR same-day pickup</li><li>Part-load &amp; full-truck</li><li>Doorstep delivery to 19,000+ pincodes</li></ul></article>
+      <article class="cap-card"><span class="big-icon"><span class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 20 6v5c0 5-3.4 8.6-8 10-4.6-1.4-8-5-8-10V6l8-3Z"/><path d="m8.5 12 2.2 2.2 4.8-5"/></svg></span></span><h3>BIS-Certified &amp; Retail-Ready</h3><p class="muted">Every toy we supply meets the BIS Toys (Quality Control) Order, 2020 with ISI marking and test reports on request — so your store stays compliant and your customers stay safe.</p><ul><li>ISI marked</li><li>IS 9873 / IS 15644 tested</li><li>Batch reports on request</li></ul></article>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact-section">
+  <div class="container contact-grid" id="quote">
+    <div class="contact-copy">
+      <p class="section-kicker">Contact Us</p>
+      <h2>Get the wholesale price list</h2>
+      <p class="muted">Tell us about your shop or business and the toys you want to stock. Our team will share the latest wholesale rates, MOQs, delivery charges to your city and BIS certificates. Walk-in buyers are welcome at our Sadar Bazar showroom.</p>
+      <address class="contact-list">
+        <div class="contact-row"><span class="contact-icon"><span class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h3l1.5 4-2 1.5a15 15 0 0 0 6 6l1.5-2 4 1.5v3c0 1.1-.9 2-2 2C10.7 19 5 13.3 5 6c0-1.7.9-3 2-3Z"/></svg></span></span><div><small>Call / WhatsApp</small><a href="tel:+918010446655">+91 8010446655</a></div></div>
+        <div class="contact-row"><span class="contact-icon"><span class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span></span><div><small>Email</small><a href="mailto:info@n8global.in">info@n8global.in</a></div></div>
+        <div class="contact-row"><span class="contact-icon"><span class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg></span></span><div><small>Showroom &amp; Warehouse</small><a target="_blank" rel="noreferrer" href="https://www.google.com/maps/search/?api=1&query=Teliwara+Chowk+Sadar+Bazar+Delhi+110006">Shop No: 17 / 2474, 3rd Floor<br>Teliwara Chowk, Opp. Jhabban Lal Dharamshalla<br>Sadar Bazar, Delhi - 110006</a></div></div>
+        <div class="contact-row"><span class="contact-icon"><span class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span></span><div><small>Hours</small><span>Mon – Sat, 10:00 AM – 7:00 PM IST</span></div></div>
+      </address>
     </div>
 
-    <!-- MAIN NAVIGATION BAR WITH LOGIN -->
-    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100 shadow-xs">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-20 items-center">
-                <!-- Logo Layout -->
-                <div class="flex items-center space-x-2">
-                    <div class="w-10 h-10 bg-[#A5D6A7] rounded-xl flex items-center justify-center text-slate-800 font-bold shadow-xs">
-                        <i data-lucide="toy-brick" class="w-6 h-6 text-slate-700"></i>
-                    </div>
-                    <span class="text-xl font-bold tracking-tight text-slate-800">Toy<span class="text-blue-500 font-medium">Dynamics</span></span>
-                </div>
+    <form class="inquiry-form" id="inquiryForm">
+      <fieldset><legend>I am a</legend><div class="service-grid">
+        <label class="choice selected"><input type="radio" name="service" value="Retail Shop / Store" checked><strong>Retail Shop / Store</strong><span>Restock your toy or gift shop at wholesale rates</span></label>
+        <label class="choice"><input type="radio" name="service" value="Distributor / Bulk Order"><strong>Distributor / Bulk Order</strong><span>Carton-wise or truckload supply for your region</span></label>
+        <label class="choice"><input type="radio" name="service" value="School / Corporate Gifting"><strong>School / Corporate Gifting</strong><span>STEM kits and gift packs in bulk with GST billing</span></label>
+      </div></fieldset>
+      <fieldset><legend>Product category</legend><div class="category-row">
+        <label class="pill selected"><input type="radio" name="category" value="Plush & Soft Toys" checked>Plush &amp; Soft Toys</label>
+        <label class="pill"><input type="radio" name="category" value="Electronic & STEM Toys">Electronic &amp; STEM Toys</label>
+        <label class="pill"><input type="radio" name="category" value="Both categories">Both categories</label>
+      </div></fieldset>
+      <div class="form-grid">
+        <label>Full name <span>*</span><input name="name" autocomplete="name" required></label>
+        <label>Shop / Company name<input name="company" autocomplete="organization"></label>
+        <label>Email <span>*</span><input name="email" type="email" autocomplete="email" required></label>
+        <label>Phone / WhatsApp <span>*</span><input name="phone" type="tel" autocomplete="tel" placeholder="+91" required></label>
+        <label>City / State<input name="location" autocomplete="address-level2" placeholder="e.g. Lucknow, Uttar Pradesh"></label>
+        <label>GSTIN (optional)<input name="gstin" placeholder="15-digit GST number"></label>
+        <label>Estimated order size<input name="quantity" placeholder="e.g. 10 cartons / month"></label>
+      </div>
+      <label class="details-label">Requirement details <span>*</span><textarea name="details" rows="5" required placeholder="Tell us which toys you are looking for — sizes, quantity, budget per piece, delivery city and when you need stock."></textarea></label>
+      <label class="file-upload"><span><span class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 12 6.5-6.5a4 4 0 0 1 5.7 5.7L11 20.4a6 6 0 0 1-8.5-8.5L12 2.4"/></svg></span></span><span class="file-text">PDF, DOCX, PNG or JPG — up to 10 MB each</span><input id="files" type="file" multiple accept=".pdf,.doc,.docx,.png,.jpg,.jpeg,.xlsx"></label>
+      <p class="file-note">Selected files will be listed in your email draft — attach them in your mail app before sending.</p>
+      <div class="form-bottom"><p>Submitting opens a pre-filled email to <a href="mailto:info@n8global.in">info@n8global.in</a>. We reply within one working day, or call / WhatsApp us on <a href="tel:+918010446655">+91 8010446655</a>.</p><button class="btn btn-accent submit-btn" type="submit"><span id="submitIcon"><span class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 4 18 8-18 8 3-8-3-8Z"/><path d="M6 12h15"/></svg></span></span><span id="submitText">Request Price List / Quote</span></button></div>
+      <p class="form-status" id="formStatus" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+</main>
 
-                <!-- Navigation Menu & Actions -->
-                <div class="hidden md:flex items-center space-x-8 text-sm font-semibold text-slate-600">
-                    <a href="#" class="hover:text-slate-900 transition-colors">Home</a>
-                    <a href="#catalog" class="hover:text-slate-900 transition-colors">Divisions</a>
-                    <a href="#capabilities" class="hover:text-slate-900 transition-colors">Capabilities</a>
-                    
-                    <!-- B2B Portal Login Trigger -->
-                    <button onclick="toggleModal(true)" class="flex items-center gap-2 text-slate-700 hover:text-slate-900 transition-colors border border-slate-200 px-4 py-2 rounded-xl bg-slate-50 cursor-pointer">
-                        <i data-lucide="user" class="w-4 h-4 text-slate-500"></i> Client Login
-                    </button>
-                    <a href="#quote" class="bg-slate-800 text-white px-5 py-2.5 rounded-xl hover:bg-slate-700 transition-all shadow-xs">Get a Quote</a>
-                </div>
-
-                <!-- Responsive Menu Toggle -->
-                <div class="md:hidden">
-                    <button id="menu-btn" class="text-slate-600 hover:text-slate-900 focus:outline-none">
-                        <i data-lucide="menu" class="w-6 h-6"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-        <!-- Mobile Dropdown -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-100 px-4 pt-2 pb-6 space-y-3 font-medium text-slate-600 shadow-md">
-            <a href="#" class="block py-2">Home</a>
-            <a href="#catalog" class="block py-2">Divisions</a>
-            <a href="#capabilities" class="block py-2">Capabilities</a>
-            <button onclick="toggleModal(true)" class="w-full text-left py-2 flex items-center gap-2"><i data-lucide="user" class="w-4 h-4"></i> Client Login</button>
-            <a href="#quote" class="block text-center bg-slate-800 text-white py-3 rounded-xl">Get a Quote</a>
-        </div>
-    </nav>
-
-    <!-- PROMINENT EDITABLE BANNER SECTION -->
-    <header class="relative overflow-hidden bg-gradient-to-tr from-[#E3F2FD] via-[#FFFDE7] to-[#E8F5E9] py-20 lg:py-32 border-b border-slate-100">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="max-w-3xl">
-                <!-- Editable Headline Badge -->
-                <span class="inline-flex items-center gap-1.5 py-1 px-3 rounded-full text-xs font-semibold bg-white text-slate-800 shadow-xs border border-slate-200/60 mb-6">
-                    <span class="w-2 h-2 rounded-full bg-emerald-400 block animate-pulse"></span> Corporate Sourcing Portal
-                </span>
-                
-                <!-- Main Banner Headline -->
-                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-900 leading-tight">
-                    From Imagination to Import: <span class="bg-gradient-to-r from-blue-600 to-emerald-600 bg-clip-text text-transparent">Next-Gen Electronic & Plush Toys</span>
-                </h1>
-                
-                <!-- Supporting Sub-text description -->
-                <p class="mt-6 text-lg text-slate-600 leading-relaxed max-w-2xl">
-                    Streamlining corporate sourcing with top-tier custom manufacturing, rigorous international safety compliance, and comprehensive end-to-end import logistics for global retail networks.
-                </p>
-                
-                <div class="mt-10 flex flex-col sm:flex-row gap-4">
-                    <button onclick="toggleModal(true)" class="inline-flex items-center justify-center px-6 py-3.5 border border-transparent text-base font-semibold rounded-xl text-white bg-slate-800 hover:bg-slate-700 shadow-md transition-all cursor-pointer">
-                        Access Vendor Login
-                    </button>
-                    <a href="#quote" class="inline-flex items-center justify-center px-6 py-3.5 border border-slate-300/80 text-base font-semibold rounded-xl text-slate-700 bg-white/80 hover:bg-white transition-all backdrop-blur-xs">
-                        Wholesale Inquiries
-                    </a>
-                </div>
-            </div>
-        </div>
-        <!-- Abstract Pasted Background Decor -->
-        <div class="absolute -top-10 -right-20 w-96 h-96 bg-blue-200/30 rounded-full blur-3xl"></div>
-        <div class="absolute bottom-0 left-1/3 w-72 h-72 bg-emerald-200/20 rounded-full blur-3xl"></div>
-    </header>
-
-    <!-- TOY CATEGORY SHOWCASE -->
-    <section id="catalog" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-2xl mx-auto mb-14">
-                <h2 class="text-3xl font-bold tracking-tight text-slate-900">Manufacturing Focus Areas</h2>
-                <p class="mt-3 text-slate-600">Dual-stream processing built for modern electronic entertainment hardware and safe soft toys.</p>
-            </div>
-
-            <div class="grid md:grid-cols-2 gap-8">
-                <!-- Division 1 -->
-                <div class="bg-gradient-to-br from-[#E8F5E9]/60 to-[#E8F5E9]/20 rounded-2xl p-8 border border-emerald-100 flex flex-col justify-between">
-                    <div>
-                        <div class="w-12 h-12 bg-white rounded-xl flex items-center justify-center text-emerald-600 border border-emerald-100 mb-6 shadow-xs">
-                            <i data-lucide="sparkles" class="w-6 h-6"></i>
-                        </div>
-                        <h3 class="text-2xl font-bold text-slate-800">Plush & Soft Toys</h3>
-                        <p class="mt-3 text-slate-600 text-sm leading-relaxed">
-                            Premium, hypoallergenic filling and GOTS certified organic materials. Crafted precisely according to custom structural design models and custom character embroidery specs.
-                        </p>
-                    </div>
-                    <div class="mt-6 pt-6 border-t border-emerald-100/60 text-xs font-semibold uppercase tracking-wider text-emerald-800">
-                        Eco-Friendly Materials Only
-                    </div>
-                </div>
-
-                <!-- Division 2 -->
-                <div class="bg-gradient-to-br from-[#E3F2FD]/60 to-[#E3F2FD]/20 rounded-2xl p-8 border border-blue-100 flex flex-col justify-between">
-                    <div>
-                        <div class="w-12 h-12 bg-white rounded-xl flex items-center justify-center text-blue-600 border border-blue-100 mb-6 shadow-xs">
-                            <i data-lucide="cpu" class="w-6 h-6"></i>
-                        </div>
-                        <h3 class="text-2xl font-bold text-slate-800">Electronic & Interactive</h3>
-                        <p class="mt-3 text-slate-600 text-sm leading-relaxed">
-                            Smart technical designs, interactive toy configurations, sound modules, and STEM educational builds matching international decibel and radiation criteria.
-                        </p>
-                    </div>
-                    <div class="mt-6 pt-6 border-t border-blue-100/60 text-xs font-semibold uppercase tracking-wider text-blue-800">
-                        Advanced Safety Testing Checked
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- GLOBAL COMPLIANCE CAPABILITIES -->
-    <section id="capabilities" class="py-20 bg-slate-50 border-t border-b border-slate-100">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="p-6 bg-white rounded-2xl border border-slate-200/60 shadow-xs">
-                    <h4 class="font-bold text-slate-800 text-base mb-2">Custom Manufacturing</h4>
-                    <p class="text-slate-600 text-xs leading-relaxed">Scalable output modules handling small product mock-ups to million-unit mass merchant distribution chains.</p>
-                </div>
-                <div class="p-6 bg-white rounded-2xl border border-slate-200/60 shadow-xs">
-                    <h4 class="font-bold text-slate-800 text-base mb-2">Global Import & Freight</h4>
-                    <p class="text-slate-600 text-xs leading-relaxed">End-to-end management covering port terminal clearance, multi-modal container transport, and warehousing routing.</p>
-                </div>
-                <div class="p-6 bg-white rounded-2xl border border-slate-200/60 shadow-xs">
-                    <h4 class="font-bold text-slate-800 text-base mb-2">ASTM, CE, & EN71 Standards</h4>
-                    <p class="text-slate-600 text-xs leading-relaxed">Every production run undergoes certification inside certified laboratories to ensure immediate import validity.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-   
-    <!-- MODAL POPUP: DYNAMIC B2B CLIENT LOGIN PORTAL -->
-    <div id="login-modal" class="fixed inset-0 z-50 overflow-y-auto hidden bg-slate-900/60 backdrop-blur-xs flex items-center justify-center p-4">
-        <div class="bg-white rounded-3xl border border-slate-200 w-full max-w-md p-8 shadow-xl relative animate-in fade-in zoom-in-95 duration-200">
-            <!-- Close icon button -->
-            <button onclick="toggleModal(false)" class="absolute top-4 right-4 text-slate-400 hover:text-slate-600 cursor-pointer">
-                <i data-lucide="x" class="w-5 h-5"></i>
-            </button>
-            
-            <div class="text-center mb-6">
-                <div class="w-12 h-12 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center mx-auto mb-3 border border-blue-100">
-                    <i data-lucide="lock" class="w-6 h-6"></i>
-                </div>
-                <h3 class="text-xl font-bold text-slate-900">B2B Vendor Portal</h3>
-                <p class="text-xs text-slate-500 mt-1">Access your tracking sheets, bills of lading, and shipping manifests.</p>
-            </div>
-
-            <form onsubmit="alert('Login authorization processing via system framework.'); event.preventDefault();" class="space-y-4">
-                <div>
-                    <label class="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-1.5">Client Email Address</label>
-                    <input type="email" required placeholder="partner@retailer.com" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:bg-white focus:border-slate-400 transition-all">
-                </div>
-                <div>
-                    <label class="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-1.5">Secure Password</label>
-                    <input type="password" required placeholder="••••••••" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:bg-white focus:border-slate-400 transition-all">
-                </div>
-                <div class="flex items-center justify-between text-xs font-semibold pt-1">
-                    <label class="flex items-center gap-1.5 text-slate-600 cursor-pointer">
-                        <input type="checkbox" class="rounded border-slate-300 text-slate-800 focus:ring-0"> Remember Me
-                    </label>
-                    <a href="#" class="text-blue-600 hover:underline">Forgot Access Key?</a>
-                </div>
-                <button type="submit" class="w-full bg-slate-800 text-white font-semibold py-3.5 rounded-xl hover:bg-slate-700 transition-colors shadow-xs cursor-pointer mt-2">
-                    Authorize & Enter Portal
-                </button>
-            </form>
-        </div>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <div class="footer-logo"><img src="./assets/logo.png" alt="N8 Global Enterprises"></div>
+      <p>India's trusted wholesaler and supplier of soft toys, electronic toys and STEM educational toys — serving retailers, distributors and schools nationwide from Sadar Bazar, Delhi.</p>
     </div>
+    <div><h3>Company</h3><ul><li><a href="#home">Home</a></li><li><a href="#about">About Us</a></li><li><a href="#capabilities">Why Choose Us</a></li><li><a href="#catalog">Product Range</a></li><li><a href="#contact">Contact Us</a></li></ul></div>
+    <div><h3>Products &amp; Services</h3><ul><li><a href="#catalog">Plush &amp; Soft Toys</a></li><li><a href="#catalog">Electronic &amp; STEM Toys</a></li><li><a href="#capabilities">Pan-India Delivery</a></li><li><a href="#quote">Wholesale Price List</a></li></ul></div>
+    <div><h3>Contact</h3><ul><li><a href="tel:+918010446655">+91 8010446655</a></li><li><a href="mailto:info@n8global.in">info@n8global.in</a></li><li>Shop No: 17 / 2474, 3rd Floor<br>Teliwara Chowk, Opp. Jhabban Lal Dharamshalla<br>Sadar Bazar, Delhi - 110006</li></ul></div>
+  </div>
+  <div class="footer-bottom"><div class="container footer-bottom-inner"><p>&copy; <span id="year"></span> N8 Global Enterprises. All rights reserved.</p><ul><li><a href="./privacy.html">Privacy Policy</a></li><li><a href="./terms.html">Terms of Trade</a></li></ul></div></div>
+</footer>
 
-    <!-- CORPORATE FOOTER PANEL -->
-    <footer class="bg-white text-slate-500 text-xs py-12 border-t border-slate-100">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
-            <div class="flex justify-center items-center space-x-2">
-                <div class="w-6 h-6 bg-[#A5D6A7] rounded-md flex items-center justify-center text-slate-800 font-bold">
-                    <i data-lucide="toy-brick" class="w-4 h-4 text-slate-700"></i>
-                </div>
-                <span class="text-sm font-bold tracking-tight text-slate-800">ToyDynamics</span>
-            </div>
-            <p class="max-w-md mx-auto text-slate-400">
-                Authorized Supplier of Custom Manufactured Entertainment Goods. Monitored through global quality assurance branches.
-            </p>
-            <div class="text-slate-400 font-medium">
-                &copy; 2026 ToyDynamics Group. Global Distribution Rights Reserved.
-            </div>
-        </div>
-    </footer>
-
-    <!-- INTERACTIVE SCRIPT ARCHITECTURE -->
-    <script>
-        // Init vector visuals
-        lucide.createIcons();
-
-        // Responsive Hamburger Nav Logic
-        const menuBtn = document.getElementById('menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-        menuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-
-        // B2B Login Modal Visibility Control
-        function toggleModal(show) {
-            const modal = document.getElementById('login-modal');
-            if (show) {
-                modal.classList.remove('hidden');
-                document.body.style.overflow = 'hidden'; // Lock scrolling behind modal
-            } else {
-                modal.classList.add('hidden');
-                document.body.style.overflow = ''; // Unlock scrolling
-            }
-        }
-    </script>
+<script src="./script.js"></script>
 </body>
 </html>
